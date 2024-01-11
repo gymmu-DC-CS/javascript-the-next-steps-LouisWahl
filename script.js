@@ -54,3 +54,13 @@ export function exercise04(args) {
   }
   return count
 }
+export function exercise05(args) {
+  const input = args
+  for (let i = 0; i < input.length; i++) {
+    const capitalLetter = input[i].charCodeAt()
+    if (capitalLetter >= 65 && capitalLetter <= 90) {
+      return true
+    }
+  }
+  return false
+}
