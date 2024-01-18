@@ -64,3 +64,18 @@ export function exercise05(args) {
   }
   return false
 }
+export function exercise06(args) {
+  const input = args
+  for (let i = 3; i < input.length; i++) {
+    const specialCharacter = input[i].charCodeAt()
+    if (
+      (specialCharacter >= 33 && specialCharacter <= 47) ||
+      (specialCharacter >= 58 && specialCharacter <= 64) ||
+      (specialCharacter >= 91 && specialCharacter <= 96) ||
+      (specialCharacter >= 123 && specialCharacter <= 126)
+    ) {
+      return true
+    }
+  }
+  return false
+}
